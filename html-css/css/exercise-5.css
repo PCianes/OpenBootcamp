@@ -1,0 +1,42 @@
+* {
+  background-color: gray;
+}
+
+.gallery {
+  border: 3px solid #fff;
+  height: 350px;
+  width: 400px;
+  position: relative;
+}
+
+.gallery img {
+  position: absolute;
+  width: 400px;
+  left: 0;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.gallery input[type="radio"] {
+  cursor: pointer;
+  position: relative;
+  top: 320px;
+  margin-left: 65px;
+}
+
+.gallery input[type="radio"]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+  opacity: 1;
+}
+
+.gallery input[type="radio"]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+  opacity: 1;
+}
+
+.gallery input[type="radio"]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+  opacity: 1;
+}
+
+.gallery input[type="radio"]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+  opacity: 1;
+}
