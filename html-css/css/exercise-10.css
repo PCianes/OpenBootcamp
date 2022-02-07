@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* mobile first */
+
+.title {
+  margin: 20px;
+}
+
+.container {
+  background: #ccc;
+  padding: 25px;
+}
+
+.box {
+  color: #fff;
+  background-color: green;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+video {
+  width: 100%;
+  display: none;
+}
+
+@media screen AND (min-width: 600px) {
+  .box {
+    background-color: red;
+  }
+  video {
+    display: block;
+  }
+  img {
+    display: none;
+  }
+}
