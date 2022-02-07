@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* mobile first */
+
+.title {
+  margin: 20px;
+}
+
+.container {
+  background: #ccc;
+  padding: 25px;
+}
+
+@media screen AND (min-width: 1200px) {
+  .img-1 {
+    display: none;
+  }
+}
+
+@media screen AND (min-width: 992px) {
+  .img-2 {
+    display: none;
+  }
+}
