@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="formulario1" action="recibeform.html"
+    method="post">
+  
+  
+    </form>
+  
+
+
+
+    Número de teléfono o móvil	<input type="tel">	
+    Dirección URL	<input type="url">	
+    Dirección de correo email	<input type="email">	
+    Clave o contraseña	<input type="password">	
+    ••••
+    Campo oculto (no mostrar al usuario)	<input type="hidden">	
+    Texto alfanumérico libre (extenso)	<textarea>	
+
+ <textarea name="texto" cols="80" rows="10" placeholder="Escribe aquí el texto...">
+    Este es el valor por defecto
+  </textarea>
+-->
+
+<!-- spellcheck
+  <input type="text" name="objeto1" value="camion azul " spellcheck="true" />
+  <input type="text" name="objeto2" value="camion azul " spellcheck="false" />
+  <textarea cols="40" name="objeto3" spellcheck="true">camion azul</textarea>
+-->
+
+<!-- Campos numéricos
+  Número entre 10 y 50, de 5 en 5. Valor por defecto: 25 
+  <input type="number" name="numero" value="25" min="10" max="50" step="5" />
+  Su misma versión, utilizando el slider en un rango numérico 
+  <input type="range" name="numrango" value="25" min="10" max="50" step="5" />
+-->
+
+<!-- tipos de fecha y hora
+Fecha	<input type="date">	
+dd/mm/aaaa
+Hora	<input type="time">	
+--:--
+Fecha y hora local	<input type="datetime-local">	
+dd/mm/aaaa --:--
+Mes	<input type="month">	
+---------- de ----
+Semana	<input type="week">
+Selecciona el mes deseado:
+<input type="month" name="mes"
+value="2018-05" min="2018-02" max="2018-06" step="2" />
+-->
+
+<!-- casillas de verficación 
+<p>
+    Sexo:
+    <input type="radio" name="sexo" value="H" /> Hombre
+    <input type="radio" name="sexo" value="M" /> Mujer
+  </p>
+
+   Casillas de verificación (marcada por defecto)
+  <input type="checkbox" name="empresa" checked />
+  ¿Eres autónomo/empresa?
+-->
+
+<!-- Listas
+  <select name="combo" multiple>
+    <optgroup label="Opciones básicas">
+        <option value="1" label="Opcion 1"> </option>
+      </optgroup>
+  
+      <optgroup label="Opciones avanzadas">
+        <option value="2" label="Opcion 2"> </option>
+        <option value="3" label="Opcion 3"> </option>
+      </optgroup>
+    </select>
+-->
+
+<!-- seleccion de archivos
+<input type="file">
+Hay que poner en el formulario enctype="multipart/form-data
+-->
+
+<!--
+<form name="formulario" method="post" action="/send.php">
+   Agrupación de campos 
+  <fieldset>
+    <legend>Datos personales</legend>
+  </fieldset>
+</form>
+-->
+
+<!-- etiqueta label
+ <label for="elnumero">
+      Edad:
+      <input id="elnumero" type="number" name="edad" min="18" max="100" placeholder="18" />
+  </label>
+-->
+
+<!-- Botones de envio
+  <input type="submit" value="Enviar formulario" />
+  <input type="image" src="enviar.png" alt="Enviar" width="80" height="28" />
+  <input type="submit" value="Enviar formulario" />
+  <input type="reset" value="Borrar formulario" />-->
+
+<!-- required y placeholder --- pattern
+ <input type="text" name="nombre" placeholder="Su nombre de usuario"
+           minlength="5" maxlength="40" required pattern="[A-Za-z0-9]+" />
+-->
+
+
+<!-- Como ejemplo podemos quitar el required y cambiar el url en el post-->
+</body>
+</html>

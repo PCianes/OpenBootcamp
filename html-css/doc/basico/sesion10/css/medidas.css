@@ -1,0 +1,26 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* el navegador le da al valor em = 16px; */
+
+h2 {
+    font-size: 3rem;
+}
+
+/* el tamaño de la fuente será 3 x 16 = 90px; */
+
+
+.container {
+    font-size: 40px;
+    background-color: chocolate;
+    height: 100vh;
+    /* height: 100%;*/
+    width: min-content;
+}
+
+/* vh y vw */
+
+

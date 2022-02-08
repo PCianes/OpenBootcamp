@@ -1,0 +1,25 @@
+
+
+
+    @mixin color-principal {
+    color: $color-primario;
+    }
+
+    @mixin color-fondo {
+    background-color: $color-secundario;
+    }
+
+
+    @mixin encabezados($tamano) {
+        h1 {
+            font-size: $tamano;
+            padding: $espaciado-doble;
+            @include color-principal;
+        }
+        h2 {
+            font-size: $tamano - 0.2;
+        }
+        h3 {
+            font-size: $tamano - 0.5;
+        }
+    }

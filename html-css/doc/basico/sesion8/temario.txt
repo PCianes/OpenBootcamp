@@ -1,0 +1,32 @@
+* Añadiendo Bootstrap
+  * ¿Qué es Boostrap?
+  * ¿Quién lo mantiene?
+  * Boostrap en la actualidad del mundo del desarrollo
+  * Versión actual de Boostrap
+  * Pasos a seguir para añadir Bootstrap a un HTML
+
+
+* Conociendo los estilos y animaciones de Bootstrap
+  * Análisis de los estilos y elementos más interesantes del framework
+  * Análisis de las animaciones implementadas en Bootstrap
+
+
+  Bootstrap es un framework front-end utilizado para desarrollar aplicaciones web y sitios mobile first, o sea, con un layout que se adapta a la pantalla del dispositivo utilizado por el usuario.
+
+
+  Bootstrap, originalmente llamado Blueprint de Twitter, fue desarrollado por Mark Otto y Jacob Thornton de Twitter, como un marco de trabajo (framework) para fomentar la consistencia entre las herramientas internas. Antes de Bootstrap, se usaron varias bibliotecas para el desarrollo de interfaces de usuario, lo que generó inconsistencias y una gran carga de trabajo en su mantenimiento. Según el desarrollador de Twitter, Mark Otto, frente a esos desafíos:
+
+"...un grupo súper pequeño de desarrolladores y yo nos reunimos para diseñar y construir una nueva herramienta interna y vimos la oportunidad de hacer algo más. A través de ese proceso, nos vimos construyendo algo mucho más sustancial que otra herramienta interna. Meses después terminamos con una primera versión de Bootstrap como una manera de documentar y compartir activos y patrones de diseño comunes dentro de la compañía."
+
+Mark Otto4​
+
+El primer desarrollo en condiciones reales ocurrió durante la primera "Semana de Hackeo" (Hackweek) de Twitter.
+
+Mark Otto mostró a algunos colegas como acelerar el desarrollo de sus proyectos con la ayuda de la herramienta de trabajo. Como resultado, decenas de temas se han introducido en el marco de trabajo.
+
+En agosto del 2011, Twitter liberó Bootstrap como código abierto. 
+En febrero del 2012, se convirtió en el proyecto de desarrollo más popular de GitHub.
+
+
+
+Animate CSS on scroll https://www.cssscript.com/animate-elements-scroll-using-animate-css/

@@ -1,0 +1,41 @@
+
+body {
+    font-family: Arial;
+}
+
+div {
+    background-color: brown;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff6500;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.enlace {
+    background-color: red;
+    display: block;
+    width: min-content;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: -10px;
+}
+
+.mi-imagen {
+    width: 200px;
+    background-color: aquamarine;
+    padding: 4px;
+    border: 5px solid #ccc;
+
+    position: fixed;
+    top: 20px;
+    left: 60px;
+}

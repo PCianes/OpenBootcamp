@@ -1,0 +1,19 @@
+12ª Sesión:
+
+* Otros aspectos de interés de Boostrap
+  * Tablas
+  * Imágenes
+  * Jumbotron
+  * Alertas
+  * Spinners
+  * Cards
+  * Listas
+  * Formularios
+  * Ventanas modales
+  * Iconos
+  * Tootips
+  * Popover
+  * Toast
+  * Badges
+  * Barras de progreso
+  * Tipografías

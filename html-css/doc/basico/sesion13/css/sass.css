@@ -1,0 +1,56 @@
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h1 {
+  background-color: blanchedalmond;
+  color: brown;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h1.invertido {
+  font-size: 1.3em;
+  padding: 15px;
+  background-color: #111;
+  color: #eee;
+}
+
+div.invertido {
+  padding: 5px;
+  background-color: #111;
+  color: #eee;
+}
+
+blockquote {
+  margin: 2em 3em;
+  padding: 20px;
+  text-align: center;
+  background-color: #111;
+  color: #eee;
+}
+
+.caja {
+  padding: 10px;
+  font-size: 1.2em;
+}
+.caja-borde {
+  border: 1px solid #ddd;
+}
+.caja-fondo {
+  background-color: #f0f0f0;
+}
+.caja-espaciadoextra {
+  padding: 20px;
+}/*# sourceMappingURL=sass.css.map */

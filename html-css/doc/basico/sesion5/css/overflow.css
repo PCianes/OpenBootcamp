@@ -1,0 +1,24 @@
+
+
+.parrafo {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    padding: 20px;
+    margin-bottom: 30px;
+    overflow:scroll;
+}
+
+.imagen {
+
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    padding: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+/* probar a quitar y poner */
+img {
+    max-width: 100%;
+}

@@ -1,0 +1,33 @@
+
+
+    @function numero($num: 500px){
+        @return  $num/2;
+    }
+  
+  .uno {
+    width: numero();
+    background-color: orange;
+    text-align: center;
+  }
+  
+  .dos {
+    width: numero(600px);
+    background-color: aqua;
+    text-align: center;
+  }
+  
+
+  /*funciones con listas nth($list , $n) */ 
+
+  .uno {
+    width: percentage(0.2);
+    font-family: nth((Helvetica, Arial, sans-serif), 3);
+  }
+  
+  .dos {
+     color: nth((white, red), 1);
+  }
+  
+  .tres {
+     width: nth((100%, 30%, 50%), 3);
+  }

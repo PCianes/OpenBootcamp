@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=Roboto+Condensed:wght@700&display=swap");
+*, *::before, *::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.morphing {
+  position: relative;
+  font-size: 40px;
+  background-color: #000;
+  color: #00FFFF;
+  min-height: 100vh;
+  /* filter: contrast(25) blur(1px);*/
+}
+
+.word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: word 15s infinite ease-in-out;
+          animation: word 15s infinite ease-in-out;
+}
+.word:nth-child(1) {
+  -webkit-animation-delay: -15s;
+          animation-delay: -15s;
+}
+.word:nth-child(2) {
+  -webkit-animation-delay: -13.125s;
+          animation-delay: -13.125s;
+}
+.word:nth-child(3) {
+  -webkit-animation-delay: -11.25s;
+          animation-delay: -11.25s;
+}
+.word:nth-child(4) {
+  -webkit-animation-delay: -9.375s;
+          animation-delay: -9.375s;
+}
+.word:nth-child(5) {
+  -webkit-animation-delay: -7.5s;
+          animation-delay: -7.5s;
+}
+.word:nth-child(6) {
+  -webkit-animation-delay: -5.625s;
+          animation-delay: -5.625s;
+}
+.word:nth-child(7) {
+  -webkit-animation-delay: -3.75s;
+          animation-delay: -3.75s;
+}
+@-webkit-keyframes word {
+  0%, 5%, 100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  20%, 80% {
+    filter: blur(1em);
+    opacity: 0;
+  }
+}
+@keyframes word {
+  0%, 5%, 100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  20%, 80% {
+    filter: blur(1em);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=morphing copy.css.map */

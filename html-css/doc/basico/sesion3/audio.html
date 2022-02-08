@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- 
+src	Dirección URL	Audio a reproducir. Obligatoria si actua como etiqueta contenedora.
+preload	auto | metadata | none	Indica como realizar la precarga del audio.
+mediagroup	nombre	Establece un nombre para un grupo de contenidos multimedia.
+autoplay		Comienza a reproducir el audio automáticamente.
+loop		Vuelve a iniciar el audio cuando finaliza su reproducción (bucle).
+muted		Establece el audio sin sonido (silenciado).
+controls		Muestra los controles de reproducción. Por defecto no se muestran.
+-->
+<h1>Audio</h1>
+<audio src="cinematic-fairy-tale-story-main-8697.mp3" autoplay loop controls preload="none"></audio>
+
+
+
+<!-- 
+
+Formato	Codec utilizado	Características	¿Recomendado?
+MP3	MPEG Layer-3	Buena calidad.	Sí, buen soporte
+AAC	Advanced Audio Coding	Mejora el MP3. Usado como audio en MP4.	Sí, buen soporte
+OGG	Ogg Vorbis	Buena calidad. Alternativa libre a MP3.	Sí, soporte medio
+Opus	Opus	Buena calidad. Alternativa libre a MP3.	Sí, soporte medio
+FLAC	FLAC Audio Lossless	Compresión sin pérdidas. Alto tamaño.	Sí, buen soporte.
+WAV	Wave sound	Formato de Microsoft. Está soportado.	No, muy pesado
+
+
+-->
+
+<audio>
+    <source src="audio.opus" />
+    <source src="audio.ogg" />
+    <source src="audio.mp3" />
+  </audio>
+
+
+</body>
+</html>

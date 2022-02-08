@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medatadas</title>
+    <meta http-equiv="refresh" content="300;url=http://otraweb.com/" />
+    <meta http-equiv="expires" content="Fri, 29 Apr 2016 12:56:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+<!--
+Con el valor alternate en el atributo rel de la etiqueta <link> podemos indicar que el documento actual tiene versiones alternativas en otros formatos o idiomas. El siguiente ejemplo indica que el documento HTML que estamos leyendo tiene una versión en PDF, y además, una versión HTML en inglés:
+-->
+    <link rel="alternate" href="document.pdf" type="application/pdf" />
+    <link rel="alternate" href="document-en.html" hreflang="en" />
+
+<!--
+<link>	href, hreflang, rel, media, type	Establece una relación del documento actual con otro externo.
+<meta>	name, content, http-equiv, charset	Establece un metadato específico en el documento actual.
+<style>	media, type	Crea estilos CSS que afectarán únicamente al documento actual.
+<script>	src, type, charset, async, defer	Indica un script a cargar o ejecutar en la página actual.
+-->
+
+<link rel="author" href="http://twitter.com/xxx" />
+<link rel="help" href="http://aaa.com/ayuda/" />
+<link rel="search" href="http://aaa.com/busqueda/" />
+<link rel="license" href="http://aaa.com/licencia/" />
+
+<!-- favicons -->
+    <link rel="shortcut icon" href="/favicon.ico" /> <!-- HTML4 -->
+    <link rel="icon" sizes="64x64" href="/favicon.png" /> <!-- HTML5 -->
+    <link rel="apple-touch-icon" sizes="180x180"
+    href="/apple-touch-icon-180x180.png" /> <!-- iPhone/iPad -->
+    <meta name="msapplication-TileImage"
+    content="/mstile-144x144.png" /> <!-- Windows Phone -->
+
+<!-- google
+canonical	Dirección URL	URL exacta que Google debería asociar al documento actual en el buscador.
+prev	Dirección URL	Si el documento actual tiene varias partes, indica la URL de la página anterior.
+next	Dirección URL	Si el documento actual tiene varias partes, indica la URL de la página siguiente.
+-->
+
+<link rel="stylesheet" href="index.css" type="text/css" />
+
+<!-- facebook open graph-->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Título del post" />
+<meta property="og:image" content="http://pagina.com/img/imagen32.jpg" />
+<meta property="og:description" content="Descripción de la página" />
+
+<!-- twitter-->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:creator" content="@Manz" />
+<meta property="twitter:title" content="Título" />
+<meta property="twitter:description" content="Descripción" />
+<meta property="twitter:image:src" content="URL_img.jpg" />
+
+
+</head>
+<body>
+    
+</body>
+</html>

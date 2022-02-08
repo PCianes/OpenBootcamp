@@ -1,0 +1,12 @@
+
+
+11ª Sesión:
+
+* El sistema grid de Bootstrap
+  * Trabajando de manera responsive con las columnas de Bootstrap
+  * Stacked/Horizontal
+  * XSmall
+  * Small
+  * Medium
+  * Large
+  * XLarge

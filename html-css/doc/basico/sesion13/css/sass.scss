@@ -1,0 +1,69 @@
+
+@mixin color-invertido {
+    background-color: #111;
+    color: #eee;
+  }
+
+  @mixin encabezados($tamano) {
+    h1 {
+      font-size: $tamano;
+    }
+    h2 {
+      font-size: $tamano - 0.2;
+    }
+    h3 {
+      font-size: $tamano - 0.5;
+    }
+  }
+
+  @include encabezados(2em);
+
+
+  %heading {
+    background-color: blanchedalmond;
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  h1 {
+    @extend %heading;
+    font-size: 2em;
+  }
+
+
+h1.invertido {
+    font-size: 1.3em;
+    padding: 15px;
+    @include color-invertido;
+  }
+  
+  div.invertido {
+    padding: 5px;
+    @include color-invertido;
+  }
+  
+  blockquote {
+    margin: 2em 3em;
+    padding: 20px;
+    text-align: center;
+    @include color-invertido;
+  }
+
+
+
+  .caja {
+    padding: 10px;
+    font-size: 1.2em;
+  
+    &-borde {
+      border: 1px solid #ddd;
+    }
+  
+    &-fondo {
+      background-color: #f0f0f0;
+    }
+  
+    &-espaciadoextra {
+      padding: 20px;
+    }
+  }

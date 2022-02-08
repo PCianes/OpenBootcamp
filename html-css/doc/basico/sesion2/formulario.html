@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="formulario1" action="recibeform.html"
+    method="post" style ="border: 1px #000 solid;margin: 30px;padding: 30px;background-color: #f2f2f2;">
+  
+    <h2>Nuestro formulario</h2>
+
+    <fieldset>
+      <legend>Aquí son tud datos de contacto:</legend>
+
+      <div>
+        <input id="formulario1_nombre" name="nombre" pattern="[A-Za-z0-9]+" required type="text" value="Pepe" placeholder="Aquí tu nombre" />
+        <p></p>
+        <input type="password">
+
+        <p></p>
+        <textarea cols="40" name="objeto3" spellcheck="true">camion azul</textarea>
+
+        <p> </p>
+          Número entre 10 y 50, de 5 en 5. Valor por defecto: 25 
+          <p></p>
+          <input type="number" name="numero" value="25" min="10" max="50" step="5" />
+
+          <p></p>
+          Su misma versión, utilizando el slider en un rango numérico 
+          <input type="range" name="numrango" value="25" min="10" max="50" step="5" />
+
+          <p></p>
+
+          Fecha	<input type="date">	
+          <p></p>
+Hora	<input type="time">	
+
+<p></p>
+<input type="radio" name="sexo" value="H" /> Hombre
+<input type="radio" name="sexo" value="M" /> Mujer
+</p>
+
+Casillas de verificación (marcada por defecto)
+<input type="checkbox" name="empresa" checked /><p></p>
+Casillas de verificación (marcada por defecto)
+<input type="checkbox" name="empresa" checked /><p></p>
+Casillas de verificación (marcada por defecto)
+<input type="checkbox" name="empresa" checked /><p></p>
+Casillas de verificación (marcada por defecto)
+<input type="checkbox" name="empresa" checked /><p></p>
+
+<select name="combo" >
+  <optgroup label="Opciones básicas">
+      <option value="1" label="Opcion 1"> </option>
+    </optgroup>
+
+    <optgroup label="Opciones avanzadas">
+      <option value="2" label="Opcion 2"> </option>
+      <option value="3" label="Opcion 3"> </option>
+    </optgroup>
+  </select>
+
+       
+
+
+      </div>
+
+      <p></p>
+
+      <div>
+        <input type="submit" value="Enviar formulario" />
+      </div>
+
+
+    </fieldset>
+
+
+
+    </form>
+  
+</body>
+</html>

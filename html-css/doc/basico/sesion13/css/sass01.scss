@@ -1,0 +1,35 @@
+
+    @import "variables";
+    @import "mixins";
+    @import "placeholders";
+    @import "encabezados";
+    @import "funciones";
+
+
+
+    div{
+    padding: $espaciado-estandar;
+    height: 300px;
+    width: 300px;
+    margin-top: $espaciado-doble;
+    @include color-fondo;
+    @include color-principal;
+    }
+
+  .caja {
+    padding: $espaciado-estandar;
+    font-size: $fuente-normal;
+  
+    &-borde {
+      border: $borde1;
+    }
+  
+    &-fondo {
+      background-color: $color-secundario;
+    }
+  
+    &-espaciadoextra {
+      padding: $espaciado-doble;
+    }
+  }
+  

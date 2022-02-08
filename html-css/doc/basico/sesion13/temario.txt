@@ -1,0 +1,50 @@
+13ª Sesión:
+
+Usando pre-procesadores CSS
+¿Qué es SASS?
+
+SASS es un sistema de procesamiento de hojas de estilo CSS
+mediante uno o varios archivos SASS que pueden ser .sass o .scss hremos una "compilación" de ese código teniendo como resultado un archivo.CSS
+
+Es decir
+de uno/varios archivos .sass o .scss >>>>>>>> lograremos el resultado de un .CSS
+
+Ventajas:
+* Añadimos lógica de programación a CSS, ahorramos tiempo de programación
+* Reaprovechamiento de código
+* Dividimos la lógica en bloques siendo mucho más sencillo el mantenimiento del código
+  sobre todo en proyectos muy grandes
+
+  .sass tiene una estructura más compleja y que no se parece a CSS
+  en cambio .scss mantiene la misma lógica que .css, 
+  si cambiamos a un archivo la Extensión .css a .scss sería correcto
+  es decir todo archivo css es un archivo sass si le cambiamos la Extensión.
+
+Instalación y configuración para trabajar con SCSS en tu proyecto
+
+Vamos a instalar VSC y la extensión de SaSS Live Compiler
+Vemos como se procesa en Vivo el archivo .css desde nuestro .scss
+Añadimos nuestro css a un html
+
+
+Variables
+
+¿Qué son los mixins y para que se emplean?
+
+ Para esta parcela de trabajo, en Sass tenemos los mixins, que serían algo así como lo que conocemos como funciones en un lenguaje de programación.
+
+ Podemos escribir un mixin e invocarlo tantas veces como sea necesario, produciendo una salida CSS. Un mixin además tiene la habilidad de recibir parámetros, como las funciones, de modo que se produzca la salida a partir del valor de los parámetros recibidos en su invocación.
+
+ Realmente lo más interesante es producir un código más claro, más expresivo y sobre todo con mayor facilidad de mantenimiento.
+
+
+Anidación
+Importación
+Extensión
+
+
+Breve introducción al uso de funciones de cadenas de texto
+Breve introducción al uso de funciones de números
+Breve introducción al uso de funciones de listas
+Breve introducción al uso de funciones de introspección
+Breve introducción al uso de funciones de colores

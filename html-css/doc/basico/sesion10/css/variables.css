@@ -1,0 +1,11 @@
+
+:root {
+    --color-de-fondo: rgb(240, 29, 152);
+}
+
+.contenedor {
+    background-color: var(--color-de-fondo);
+}
+.contenedor2 {
+    background-color: var(--color-de-fondo);
+}

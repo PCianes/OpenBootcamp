@@ -1,0 +1,20 @@
+* Introducción al diseño responsive
+
+  * Las unidades de CSS fijas y relativas
+  * La problemática de la dimensión del ViewPort y la densidad de píxeles
+  * ¿En qué consiste el diseño responsive?
+  * Las unidades em y rem
+  * Uso de media queries para cambios relativos al tamaño
+  * Uso avanzado de Flex-Box
+  * Uso de Viewport, Grid View, Grid y templates
+  * Uso de variables reutilizables en CSS
+
+
+  * Las unidades de CSS fijas y relativas
+  * La problemática de la dimensión del ViewPort y la densidad de píxeles
+  * ¿En qué consiste el diseño responsive?
+  * Las unidades em y rem
+  * Uso de media queries para cambios relativos al tamaño
+  * Uso avanzado de Flex-Box
+  * Uso de Viewport, Grid View, Grid y templates
+  * Uso de variables reutilizables en CSS

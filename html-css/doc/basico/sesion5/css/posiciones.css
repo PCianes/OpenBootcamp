@@ -1,0 +1,43 @@
+
+
+a.mi-enlace {
+    display: block;
+    background-color: red;
+    color: #fff;
+    padding: 20px;
+    font-size: 26px;
+    text-decoration: none;
+    margin: 20px;
+    width: min-content;
+    position: relative;
+    top: -60px;
+    left: 50px;
+}
+
+img.mi-imagen {
+    width: 300px;
+    border: 5px solid #ccc;
+    padding: 3px;
+    position: fixed;
+    top: 10px;
+    left: 147px;
+}
+
+.mi-div {
+    background-color: green;
+    color: #fff;
+    font-size: 18px;
+    padding: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sticky {
+    position: sticky;
+    background-color: #3aaaaa;
+    top: 10px;
+}

@@ -1,0 +1,79 @@
+
+/* estilo universal*/
+
+* {color: brown;}
+
+
+/*selector de elemento*/
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    list-style: 20px;
+    font-weight:500;
+}
+
+/*
+p {
+    background-color: rgb(36, 14, 114);
+    padding: 10px;
+}
+div {
+    color: white;
+    padding: 20px;
+    background-color: chocolate;
+    margin-bottom: 20px;
+}
+*/
+
+/* selectores por id*/
+#midiv p {
+    color:gray;
+    font-style: italic;
+}
+
+/* selectores de clase*/
+.verde {
+    color: green;
+}
+
+/* Agrupamiento de selectores */
+h2, h1, p {
+    color: #741a297c;
+}
+
+/* Selector por atributo */
+[atributo="hola"] {
+    color: #1616cf;    
+}
+
+input[type="text"] {
+    border: 3px solid #000;
+}
+
+/* selección descendiente */
+
+.div1 p {
+    color: crimson;
+    background-color: darkkhaki;
+    padding: 20px;
+    margin: 30px;
+    border: 2px dotted #000;
+}
+
+/* pseudoclases */
+div p:hover {
+    color:blue;
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+
+/*
+    selector {
+        propiedad:valor;
+    }
+    selector {
+        propiedad:valor;
+    }
+*/

@@ -1,0 +1,29 @@
+
+.flex-container {
+
+    display: flex;
+}
+
+.flex-item {
+background-color: saddlebrown;
+color:#fff; 
+padding: 10px;
+margin: 10px;
+}
+
+.flex-item {
+background-color: saddlebrown;
+color:#fff; 
+padding: 10px;
+margin: 10px;
+}
+
+.flex-item2{
+
+    background-color: blue;
+    color:#fff; 
+    padding: 10px;
+    margin: 10px;
+    height: 120px;
+    width: 120px;
+}
