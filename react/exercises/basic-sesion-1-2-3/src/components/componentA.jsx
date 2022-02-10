@@ -10,10 +10,8 @@ const ComponentA = () => {
   const { name, surname, email, online } = contact
 
   const toggleState = () => {
-    updateContact({
-      ...contact,
-      online: !online
-    })
+    const newContact = new Contact(name, surname, email, !online)
+    updateContact(newContact)
   }
 
   return (
