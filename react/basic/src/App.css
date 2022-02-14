@@ -3,8 +3,11 @@
   padding: 0;
 }
 
-.App {
-  width: 100vw;
-  height: 100vh;
-  background-color: #ccc;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: aliceblue;
 }
