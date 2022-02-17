@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src",
-    "dev": "webpack-dev-server --mode development --hot --open --content-base",
+    "deploy:dev": "webpack-dev-server --mode development --hot --open --static",
     "docs:build": "documentation build src/** -f html -o docs",
-    "build": "webpack",
-    "build:prod": "webpack"
+    "build": "webpack --mode development",
+    "build:prod": "webpack --mode production"
   },
   "author": "Pablo Cianes",
   "license": "ISC",
@@ -30,6 +30,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-webpack-plugin": "^3.1.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.5.3",

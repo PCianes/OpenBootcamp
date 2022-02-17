@@ -1,23 +1,23 @@
-const path = require('path')
+const path = require('path');
 
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const { SourceMapDevToolPlugin } = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { SourceMapDevToolPlugin } = require('webpack');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000;
 
-module.export = {
+module.exports = {
   entry: './src/index.jsx',
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'bundle.[hash].js',
-    publicPath: '/'
+    publicPath: '/',
   },
   context: path.resolve(__dirname),
   devServer: {
     port,
-    inline: true,
-    historyApiFallback: true
+    historyApiFallback: true,
   },
   devtool: 'eval-source-map',
   module: {
@@ -27,60 +27,65 @@ module.export = {
         test: /(\.js|\.jsx)$/,
         exclude: /node_modules/,
         use: [
-          'eslint-loader',
-          'source-map-loader'
-        ]
+          'source-map-loader',
+        ],
       },
       {
         test: /(\.js|\.jsx)$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets: [
-            '@babel/env',
-            '@babel/react'
-          ]
-        }
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/env',
+              '@babel/react',
+            ],
+          },
+        },
       },
       {
         test: /(\.css|\.scss|\.sass)$/,
-        loader: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader'
-        ]
+        use: [
+          { loader: MiniCssExtractPlugin.loader },
+          { loader: 'css-loader' },
+          { loader: 'sass-loader' },
+        ],
       },
       {
         test: /\.(png|jpe?g|gif)$/,
         use: [
           {
-            loader: 'file-loader'
-          }
-        ]
-      }
-    ]
+            loader: 'file-loader',
+          },
+        ],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin(
       {
-        template: './index.html'
-      }
+        template: './public/index.html',
+      },
     ),
     new MiniCssExtractPlugin(
       {
-        filename: './css/styles.css'
-      }
+        filename: './css/styles.css',
+      },
     ),
     new SourceMapDevToolPlugin(
       {
-        filename: '[file].map'
-      }
-    )
+        filename: '[file].map',
+      },
+    ),
+    new ESLintPlugin(),
   ],
   resolve: {
     extensions: ['.js', '.jsx', '.css', '.scss', '.sass'],
     modules: [
-      'node_modules'
-    ]
-  }
-}
+      'node_modules',
+    ],
+    alias: {
+      'react-redux': path.join(__dirname, '/node_modules/react-redux/dist/react-redux.min'),
+    },
+  },
+};
