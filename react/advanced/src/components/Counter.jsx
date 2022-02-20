@@ -6,7 +6,7 @@ export function Counter() {
 
   return (
     <div>
-      <h1>¡Hello Counter!</h1>
+      <h2>¡Hello Counter!</h2>
       <p style={{ color: 'tomato', fontWeight: 'bold' }}>{counter}</p>
       <button onClick={setCounter.increment}>Increment</button>
       <button onClick={setCounter.decrement}>Decrement</button>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const useList = (initialValue = []) => {
+export const useList = (initialValue = []) => {
   const [value, setValue] = useState(initialValue);
 
   // Push new value to list
@@ -16,12 +16,14 @@ const useList = (initialValue = []) => {
   // List is Empty ? true / false
   const isEmpty = () => value.length === 0;
 
-  // TODO:Develop more functions for lists
+  const clear = () => setValue([]);
+
+  const sort = () => setValue([...value].sort());
+
+  const reverse = () => setValue([...value].reverse());
 
   return {
-    value, setValue, push, remove, isEmpty,
+    value, setValue, push, remove, isEmpty, clear, sort, reverse
   };
 };
-
-export default useList;
 
