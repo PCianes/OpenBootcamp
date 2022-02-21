@@ -72,7 +72,12 @@ self.addEventListener('message', (event) => {
 // Any other custom service worker logic can go here.
 self.addEventListener('install', event => {
   console.log(`Installing new version...`);
-  self.registration.showNotification("New App version!", { body: "Install now!" })
+  //browser notification after new app version
+  self.registration.showNotification(
+    "New App version!",
+    {
+      body: "Install now!"
+    })
 });
 
 self.addEventListener('activate', event => {
@@ -82,5 +87,9 @@ self.addEventListener('activate', event => {
 //notifications from server
 self.addEventListener('push', event => {
   const { title, message } = event.data.json();
-  self.registration.showNotification(title, { body: message });
+  self.registration.showNotification(
+    title,
+    {
+      body: message
+    });
 })

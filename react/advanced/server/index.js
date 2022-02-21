@@ -31,7 +31,29 @@ webpush.setVapidDetails(
 
 // Routes
 app.get('/notification', async (req, res) => {
-    const payload = JSON.stringify({ title: "Notification title", message: "Notification message" });
+    const payload = JSON.stringify(
+        {
+            title: "Notification title",
+            message: "Notification message"
+        }
+    );
+    try {
+        await webpush.sendNotification(pushSubscription, payload);
+        res.send("Notification sent!");
+    } catch (error) {
+        console.log(error)
+    }
+});
+
+app.post('/notification', async (req, res) => {
+    console.log('post notification', req.body)
+    const { title, message } = req.body
+    const payload = JSON.stringify(
+        {
+            title,
+            message
+        }
+    );
     try {
         await webpush.sendNotification(pushSubscription, payload);
         res.send("Notification sent!");

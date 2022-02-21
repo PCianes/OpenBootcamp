@@ -1,20 +1,15 @@
 import './App.css';
 import { Counter } from './components/Counter'
 import { Tasklist } from './components/TaskList';
-import { withServiceWorkerUpdater } from '@3m1/service-worker-updater';
+import Updater from './components/pwa/Updater'
+import { NotificationForm } from './components/pwa/NotificacionForm';
 
 function App(props) {
-  const { newServiceWorkerDetected, onLoadNewServiceWorkerAccept } = props;
-
   return (
     <div className="App">
       <header className="App-header">
-        {newServiceWorkerDetected && (
-          <div style={{ backgroundColor: 'tomato', marginBottom: 20 }}>
-            <h3>New App version</h3>
-            <button onClick={onLoadNewServiceWorkerAccept}>¡Update now!</button>
-          </div>
-        )}
+        <Updater />
+        <NotificationForm />
         <Counter />
         <Tasklist />
       </header>
@@ -22,4 +17,4 @@ function App(props) {
   );
 }
 
-export default withServiceWorkerUpdater(App);
+export default App
