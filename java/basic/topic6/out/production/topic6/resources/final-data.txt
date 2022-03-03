@@ -1,0 +1,5 @@
+code: 97 => character: a
+code: 98 => character: b
+code: 99 => character: c
+code: 100 => character: d
+code: 101 => character: e
